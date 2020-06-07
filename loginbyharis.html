@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="title icon.png" type="icon">
+</head>
+<body>
+    <link rel="icon" href="title icon.png" type="icon">
+	<style type="text/css">
+		#form{
+			display: block;
+			margin-left: 50%;
+			margin-top: 10%;
+			border: solid;
+			padding-left: 30px;
+			padding-bottom: 20px;
+			border-color: rgba(215, 219, 221,0);
+
+
+		}
+		.firstname{
+			width: 345px;
+			padding: 10px;
+
+		}
+		.button{
+			padding: 9px;
+			width: 300px;
+			background-color: rgba(241, 235, 13);
+            color: #000000;
+            margin-top: 20px;
+		}
+		.button:hover{
+			background-color:#F4D03F;
+			border-radius: 5px;
+			box-shadow: currentColor; 
+		}
+		.head{
+			font-family: Segoe Script;
+			margin-top: 70px;
+			font-size: 35px;
+			color: black;
+		}
+		body{
+			background-image: url('loginimageofharis.jpg');
+			background-repeat: no-repeat;
+            background-image: cover;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        @media only screen and (max-width:600px){
+            #form{
+                display: flex;
+                flex-wrap: wrap;
+                width: auto;
+                
+            }
+        }
+        @media only screen and (max-width:780px){
+            .firstname{
+                width: 250px;
+            }
+        }
+        @media only screen and (max-width:780px){
+            #form{
+                margin-top: 35%;
+                margin-left: 30%;
+            }
+        }
+	</style>
+</head>
+<body>
+<div>
+	<form id="form" action="home.html">
+		<h2 class="head">Login</h2>
+		<input type="email" name="" placeholder="Email"class="firstname" required><br><br>
+        <input type="password" name="" placeholder="Password"class="firstname" required><br><br>
+        <input style="font-size: 17px;outline: none;" type="checkbox" required>I Have Read and agree to the <a href="#" style="color:black;">Terms of Use</a> and <a href="#" style="color:black;">Privacy Policy</a>
+        <button type="submit" class="button"><b> Login</b></button>
+        <p style="font-size: 17px;">Don't Have Any Account? <a href="signupbyharis.html" style="color:#D6B006;"><b> SignUp Here</b></a></p>
+        <p style="font-size: 17px;color:black;"><b> ©Sign Up & Login Form All Right Reserved || Designed By Team X</b></p>
+
+
+	</form>
+</div>
+</body>
+</html>

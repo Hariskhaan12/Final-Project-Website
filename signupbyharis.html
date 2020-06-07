@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<link rel="icon" href="title icon.png" type="icon">
+	<style type="text/css">
+		#form{
+			display: block;
+			margin-left: 50%;
+			margin-top: 10%;
+			border: solid;
+			padding-left: 30px;
+			padding-bottom: 20px;
+			border-color: rgba(215, 219, 221,0);
+
+
+		}
+		.firstname{
+			width: 345px;
+			padding: 10px;
+
+		}
+		.button{
+			padding: 9px;
+			width: 300px;
+			background-color: rgba(241, 235, 13);
+			color: #000000;
+		}
+		.button:hover{
+			background-color: #F4D03F;
+			border-radius: 5px;
+			box-shadow: currentColor; 
+		}
+		.head{
+			font-family: Segoe Script;
+			margin-top: 70px;
+			font-size: 35px;
+			color: black;
+		}
+		body{
+			background-image: url('loginimageofharis.jpg');
+			background-repeat: no-repeat;
+			background-image: cover;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+		@media only screen and (max-width:600px){
+            #form{
+                display: flex;
+                flex-wrap: wrap;
+                width: auto;
+                
+            }
+        }
+        @media only screen and (max-width:780px){
+            .firstname{
+                width: 250px;
+            }
+        }
+        @media only screen and (max-width:780px){
+            #form{
+                margin-top: 35%;
+                margin-left: 30%;
+            }
+        }
+	</style>
+</head>
+<body>
+<div>
+	<form id="form" action="home.html">
+		<h2 class="head">Requested Information</h2>
+		<input type="text" name="" placeholder="First Name" class="firstname" required><br><br>
+		<input type="text" name="" placeholder="Last Name" class="firstname" required><br><br>
+		<input type="email" name="" placeholder="Email Address"class="firstname" required><br><br>
+		<input type="password" name="" placeholder="Password"class="firstname" required><br><br>
+		<input type="number" name="" placeholder="Phone Number" class="firstname" required><br><br>
+		<label><b> Gender :</b> </label>
+		<input type="radio" name="gender" required>Male
+		<input type="radio" name="gender"required >Female
+		<input type="radio" name="gender" required>Custom<br><br>
+		<button type="submit" class="button">SignUp</button>
+		<p>Already have an account <a style="color: #D6B006; font-size: 17px;" href="loginbyharis.html"><b> Login Here</b></a> </p>
+	
+
+	</form>
+</div>
+</body>
+</html>
